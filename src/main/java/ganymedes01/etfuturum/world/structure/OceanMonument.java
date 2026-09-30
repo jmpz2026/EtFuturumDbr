@@ -1,11 +1,9 @@
 package ganymedes01.etfuturum.world.structure;
 
-import com.gtnewhorizon.gtnhlib.util.CoordinatePacker;
+import ganymedes01.etfuturum.dbr.util.CoordinatePacker;
 import ganymedes01.etfuturum.EtFuturum;
 import ganymedes01.etfuturum.ModBlocks;
 import ganymedes01.etfuturum.configuration.configs.ConfigBlocksItems;
-import it.unimi.dsi.fastutil.longs.Long2IntMap;
-import it.unimi.dsi.fastutil.longs.Long2IntOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -26,7 +24,7 @@ import java.util.Random;
 public class OceanMonument {
 
 	private static final List<BiomeGenBase> validBiomes = Arrays.asList(BiomeGenBase.ocean, BiomeGenBase.deepOcean, BiomeGenBase.river, BiomeGenBase.frozenOcean, BiomeGenBase.frozenRiver);
-	private static final Long2IntOpenHashMap map = new Long2IntOpenHashMap(26000);
+	private static final java.util.Map<Long, Integer> map = new java.util.HashMap<>(36000);
 
 	public static void makeMap() {
 		try {
@@ -62,9 +60,9 @@ public class OceanMonument {
 		if (world.isRemote)
 			return;
 
-		for (Long2IntMap.Entry entry : map.long2IntEntrySet()) {
-			final long pos = entry.getLongKey();
-			final int value = entry.getIntValue();
+		for (java.util.Map.Entry<Long, Integer> entry : map.entrySet()) {
+			final long pos = entry.getKey();
+			final int value = entry.getValue();
 			final int posX = CoordinatePacker.unpackX(pos);
 			final int posY = CoordinatePacker.unpackY(pos);
 			final int posZ = CoordinatePacker.unpackZ(pos);

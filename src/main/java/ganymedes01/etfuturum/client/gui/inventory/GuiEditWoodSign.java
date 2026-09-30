@@ -1,6 +1,6 @@
 package ganymedes01.etfuturum.client.gui.inventory;
 
-import com.gtnewhorizon.gtnhlib.util.font.FontRendering;
+import ganymedes01.etfuturum.dbr.util.FontRendering;
 import ganymedes01.etfuturum.blocks.BlockWoodSign;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;

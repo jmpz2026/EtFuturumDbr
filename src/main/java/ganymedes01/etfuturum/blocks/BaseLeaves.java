@@ -1,6 +1,6 @@
 package ganymedes01.etfuturum.blocks;
 
-import com.gtnewhorizon.gtnhlib.blocks.util.BFSLeafDecay;
+import ganymedes01.etfuturum.dbr.util.BFSLeafDecay;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLeaves;

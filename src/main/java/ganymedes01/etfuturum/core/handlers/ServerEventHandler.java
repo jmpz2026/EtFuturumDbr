@@ -69,10 +69,6 @@ import ganymedes01.etfuturum.tileentities.TileEntityGateway;
 import ganymedes01.etfuturum.world.EtFuturumWorldListener;
 import ganymedes01.etfuturum.world.nether.biome.utils.NetherBiomeManager;
 
-import it.unimi.dsi.fastutil.ints.Int2ObjectLinkedOpenHashMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.longs.LongOpenHashSet;
-import it.unimi.dsi.fastutil.longs.LongSet;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEndPortalFrame;
 import net.minecraft.block.BlockFarmland;
@@ -431,7 +427,7 @@ public class ServerEventHandler {
 	}
 
 	// Map of dim ID -> packed chunk coords
-	private final Int2ObjectMap<LongSet> loadedChunks = new Int2ObjectLinkedOpenHashMap<>();
+	private final java.util.Map<Integer, java.util.Set<Long>> loadedChunks = new java.util.LinkedHashMap<>();
 
 	@SubscribeEvent
 	public void chunkLoad(ChunkEvent.Load event) {
@@ -455,12 +451,12 @@ public class ServerEventHandler {
 		return ChunkCoordIntPair.chunkXZ2Int(chunk.xPosition, chunk.zPosition);
 	}
 
-	private LongSet getLongSet(int dim){
-		return loadedChunks.computeIfAbsent(dim, ($) -> new LongOpenHashSet());
+	private java.util.Set<Long> getLongSet(int dim){
+		return loadedChunks.computeIfAbsent(dim, ($) -> new java.util.HashSet<>());
 	}
 
 	private boolean isChunkLoaded(int dim, int chunkX, int chunkZ){
-		LongSet set = loadedChunks.get(dim);
+		java.util.Set<Long> set = loadedChunks.get(dim);
 		return set != null && set.contains(ChunkCoordIntPair.chunkXZ2Int(chunkX, chunkZ));
 	}
 

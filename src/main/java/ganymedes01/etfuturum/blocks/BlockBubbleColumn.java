@@ -6,7 +6,6 @@ import ganymedes01.etfuturum.lib.Reference;
 import ganymedes01.etfuturum.lib.RenderIDs;
 import ganymedes01.etfuturum.recipes.ModRecipes;
 import ganymedes01.etfuturum.world.EtFuturumWorldListener;
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -27,7 +26,7 @@ public class BlockBubbleColumn extends BaseBlock implements IInitAction {
 
 	private static final int[][] HORIZONTAL_OFFSETS = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
-	private final Map<Block, Integer> supportBlockMeta = new Object2IntOpenHashMap<>();
+	private final Map<Block, Integer> supportBlockMeta = new java.util.HashMap<>();
 	private int lastColumnSoundTick = -1;
 
 	/**
