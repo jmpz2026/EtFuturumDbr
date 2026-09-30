@@ -191,30 +191,30 @@ public class ConfigFunctions extends ConfigBase {
 	@Override
 	protected void syncConfigOptions() {
 		if (EtFuturumEarlyMixins.side == MixinEnvironment.Side.CLIENT) {
-			enableAttackedAtYawFix = getBoolean("enableAttackedAtYawFix", catChanges, true, "Adds a packet to send the attackedAtYaw field value to the client, which allows the screen to tilt based on where damage came from, and either left or right for direction-less sources like drowning or burning, instead of tilting to the left no matter what.");
+			enableAttackedAtYawFix = getBoolean("enableAttackedAtYawFix", catChanges, false, "Adds a packet to send the attackedAtYaw field value to the client, which allows the screen to tilt based on where damage came from, and either left or right for direction-less sources like drowning or burning, instead of tilting to the left no matter what.");
 		}
 
 		//changes
 		enableExtraBurnableBlocks = getBoolean("enableExtraBurnableBlocks", catChanges, true, "Fences, gates and dead bushes burn");
-		enableUpdatedHarvestLevels = getBoolean("enableUpdatedHarvestLevels", catChanges, true, "Packed Ice, ladders and melons have preferred tools");
-		enableSilkTouchingMushrooms = getBoolean("enableSilkMushroom", catChanges, true, "Mushroom blocks can be silk-touched");
-		enableSticksFromDeadBushes = getBoolean("enableBushSticks", catChanges, true, "Dead Bushes drop sticks");
-		enableSkullDrop = getBoolean("enableSkullDrop", catChanges, true, "Skulls drop from charged creeper kills");
-		enableUpdatedFoodValues = getBoolean("enableUpdatedFood", catChanges, true, "Use updated food values");
-		enableShearableCobwebs = getBoolean("enableShearableCobwebs", catChanges, true, "");
-		enableStoneBrickRecipes = getBoolean("enableStoneBrickRecipes", catChanges, true, "Makes mossy, cracked and chiseled stone brick craftable");
+		enableUpdatedHarvestLevels = getBoolean("enableUpdatedHarvestLevels", catChanges, false, "Packed Ice, ladders and melons have preferred tools");
+		enableSilkTouchingMushrooms = getBoolean("enableSilkMushroom", catChanges, false, "Mushroom blocks can be silk-touched");
+		enableSticksFromDeadBushes = getBoolean("enableBushSticks", catChanges, false, "Dead Bushes drop sticks");
+		enableSkullDrop = getBoolean("enableSkullDrop", catChanges, false, "Skulls drop from charged creeper kills");
+		enableUpdatedFoodValues = getBoolean("enableUpdatedFood", catChanges, false, "Use updated food values");
+		enableShearableCobwebs = getBoolean("enableShearableCobwebs", catChanges, false, "");
+		enableStoneBrickRecipes = getBoolean("enableStoneBrickRecipes", catChanges, false, "Makes mossy, cracked and chiseled stone brick craftable");
 		enableFloatingTrapDoors = getBoolean("enableFloatingTrapDoors", catChanges, true, "");
-		enableHayBaleFalls = getBoolean("enableHayBaleFalls", catChanges, true, "If true, fall damage on a hay bale will be reduced");
-		enableHoeMining = getBoolean("enableHoeMining", catChanges, true, "Allows blocks like hay bales, leaves etc to mine faster with hoes");
+		enableHayBaleFalls = getBoolean("enableHayBaleFalls", catChanges, false, "If true, fall damage on a hay bale will be reduced");
+		enableHoeMining = getBoolean("enableHoeMining", catChanges, false, "Allows blocks like hay bales, leaves etc to mine faster with hoes");
 		hayBaleReducePercent = getInt("hayBaleReducePercent", catChanges, 20, 0, 99, "If enableHayBaleFalls is true, what percent should we keep for the fall damage?");
-		enableDoorRecipeBuffs = getBoolean("enableDoorRecipeBuffs", catChanges, true, "Backports recipe buffs to doors (from 1 to 3)");
-		mobSpawnerEgging = getBoolean("mobSpawnerEgging", catChanges, true, "Click a mob spawner with a vanilla or EFR egg, and it'll change the mob inside. Doesn't support modded eggs.");
-		fireworkRecipeFixes = getBoolean("fireworkRecipeFixes", catChanges, true, "Fixes fireworks not being able to have an extra duration without a star, and they'll output 3 instead of 1. Note: This currently does NOT update NEI, it'll still show the old recipe outputs.");
-        petDeathMessages = getBoolean("petDeathMessages", catChanges, true, "Sends a death message to the owner of a tamed mob when the mob dies while the player is online.");
+		enableDoorRecipeBuffs = getBoolean("enableDoorRecipeBuffs", catChanges, false, "Backports recipe buffs to doors (from 1 to 3)");
+		mobSpawnerEgging = getBoolean("mobSpawnerEgging", catChanges, false, "Click a mob spawner with a vanilla or EFR egg, and it'll change the mob inside. Doesn't support modded eggs.");
+		fireworkRecipeFixes = getBoolean("fireworkRecipeFixes", catChanges, false, "Fixes fireworks not being able to have an extra duration without a star, and they'll output 3 instead of 1. Note: This currently does NOT update NEI, it'll still show the old recipe outputs.");
+        petDeathMessages = getBoolean("petDeathMessages", catChanges, false, "Sends a death message to the owner of a tamed mob when the mob dies while the player is online.");
 
 		//settings
 		enableNetheriteFlammable = getBoolean("enableNetheriteFlammable", catSettings, false, "Set to true to disable the fireproof item entity Netherite/ancient debris etc uses");
-		enableRecipeForPrismarine = getBoolean("enablePrismarineRecipes", catSettings, true, "Recipe for prismarine if you want it without the temples, or want it craftable alongside temples.");
+		enableRecipeForPrismarine = getBoolean("enablePrismarineRecipes", catSettings, false, "Recipe for prismarine if you want it without the temples, or want it craftable alongside temples.");
 		enableAutoAddSmoker = getBoolean("enableAutoAddSmoker", catSettings, true, "Seeks all available edible foods from the furnace and adds them to the smoker, if it's off it will only smelt things specified from CraftTweaker.");
 		enableAutoAddBlastFurnace = getBoolean("enableAutoAddBlastFurnace", catSettings, true, "Seeks all available smeltable ores, metals, etc (using OreDict tags like \"ore\", \"cluster\", \"ingot\", etc) from the furnace and adds them to the Blast Furnace, if it's off it will only smelt things specified from CraftTweaker.");
 		enableAutoAddComposter = getBoolean("enableAutoAddComposter", catSettings, true, "Seeks compostable items like plants and leaves, and automatically adds them to the composter. If this is off it will only compost things specified from CraftTweaker and nothing by default.");
@@ -227,20 +227,20 @@ public class ConfigFunctions extends ConfigBase {
 		useStoneHardnessForDeepslate = getBoolean("useStoneHardnessForDeepslate", catSettings, false, "Whether deepslate blocks should have the same hardness as their stone counterparts. This allows the asthetics of deepslate without the added hardness.");
 
 		//client
-		enableTransparentAmour = getBoolean("enableTransparentAmour", catClient, true, "Allow non-opaque armour");
-		enableBowRendering = getBoolean("enableBowRendering", catClient, true, "Bows render pulling animation in inventory");
-		enableFancySkulls = getBoolean("enableFancySkulls", catClient, true, "Skulls render 3D in inventory");
+		enableTransparentAmour = getBoolean("enableTransparentAmour", catClient, false, "Allow non-opaque armour");
+		enableBowRendering = getBoolean("enableBowRendering", catClient, false, "Bows render pulling animation in inventory");
+		enableFancySkulls = getBoolean("enableFancySkulls", catClient, false, "Skulls render 3D in inventory");
 		enablePlayerSkinOverlay = getBoolean("enablePlayerSkinOverlay", catClient, false, "Allows use of 1.8 skin format, and Alex skins. Also includes some fixes from SkinPort. (Per SkinPort author's permission) Disable if skin is displaying oddly. Not compatible with OptiFine, use FastCraft instead.");
 		enableExtraF3HTooltips = getBoolean("enableExtraF3HTooltips", catClient, true, "Enables NBT tag count and item namespace label on F3 + H debug item labels");
 		shulkerBoxTooltipLines = getInt("shulkerBoxTooltipLines", catClient, 5, 0, Byte.MAX_VALUE, "The maximum amount of items a Shulker box can display on its tooltip. When the box has more stacks inside than this number, the rest of the stacks are displayed as \"And x more...\". Set to 0 to disable Shulker Box tooltips.");
-		enableGamemodeSwitcher = getBoolean("enableGamemodeSwitcher", catClient, true, "Enable the new F3+F4 gamemode switcher from 1.16+");
+		enableGamemodeSwitcher = getBoolean("enableGamemodeSwitcher", catClient, false, "Enable the new F3+F4 gamemode switcher from 1.16+");
 		enableNewF3Behavior = getBoolean("enableNewF3Behavior", catClient, true, "Make F3 only show/hide info on release, and not if another key is pressed");
 		enableNewTextures = getBoolean("enableNewTextures", catClient, true, "Replace tall grass and sponge textures with modern version");
-		enableLangReplacements = getBoolean("enableLangReplacements", catClient, true, "Replaces some lang keys with a more modern version, such as calling some old wood items \"oak\", calling beds \"Red Bed\", and so on. Full list of replaced keys can be seen in the mod jar at resources/resourcepacks/vanilla_overrides/assets/minecraft/lang");
-		inventoryBedModels = getBoolean("inventoryBedModels", catClient, true, "Render beds with a 3D inventory model instead of a 2D sprite.");
+		enableLangReplacements = getBoolean("enableLangReplacements", catClient, false, "Replaces some lang keys with a more modern version, such as calling some old wood items \"oak\", calling beds \"Red Bed\", and so on. Full list of replaced keys can be seen in the mod jar at resources/resourcepacks/vanilla_overrides/assets/minecraft/lang");
+		inventoryBedModels = getBoolean("inventoryBedModels", catClient, false, "Render beds with a 3D inventory model instead of a 2D sprite.");
 
 		//commands
-		enableFillCommand = getBoolean("enableFillCommand", catCommands, true, "Enable the /fill command.");
+		enableFillCommand = getBoolean("enableFillCommand", catCommands, false, "Enable the /fill command.");
 
 		enableSubtitles = getBoolean("enableSubtitles", catClient, false, "Enable subtitles");
 		subtitleBlacklist = getString("subtitleBlacklist", catClient, "^(dig\\.*)", "Regex of subtitles to blacklist");

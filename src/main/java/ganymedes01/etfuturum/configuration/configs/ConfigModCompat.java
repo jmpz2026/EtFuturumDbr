@@ -44,24 +44,24 @@ public class ConfigModCompat extends ConfigBase {
 	//TODO: Move Iron Chest checks here
 	@Override
 	protected void syncConfigOptions() {
-		shulkerBoxesIronChest = getBoolean("shulkerBoxesIronChest", catMisc, true, "If Iron Chests is installed, allow Iron Shulker boxes to be crafted having all the same tiers as Iron Chests. This option does nothing if Iron Chests is not installed.");
-		barrelIronChest = getBoolean("barrelIronChest", catMisc, true, "If Iron Chests is installed, allow Iron Barrels to be crafted having all the same tiers as Iron Chests except for crystal. This option does nothing if Iron Chests is not installed.");
+		shulkerBoxesIronChest = getBoolean("shulkerBoxesIronChest", catMisc, false, "If Iron Chests is installed, allow Iron Shulker boxes to be crafted having all the same tiers as Iron Chests. This option does nothing if Iron Chests is not installed.");
+		barrelIronChest = getBoolean("barrelIronChest", catMisc, false, "If Iron Chests is installed, allow Iron Barrels to be crafted having all the same tiers as Iron Chests except for crystal. This option does nothing if Iron Chests is not installed.");
 		elytraBaublesExpandedCompat = getInt("elytraBaublesExpandedCompat", catMisc, 1, 0, 2, """
 				Adds compat for Baubles Expanded. Does nothing for standard baubles, this REQUIRES Baubles Expanded! It uses the new "wings" slot added by the expanded version. https://modrinth.com/mod/baubles-expanded\
 				When enabled, this allows the player to equip an elytra with a chestplate, by placing the elytra in a "wings" slot instead of the chestplate slot. Note that the player can only equip one elytra at a time.\
 				0 = No compat, do not allow the elytra to be placed in a wings slot.\
 				1 = Elytra will be placeable in a wings slot. Will enable the slot, if it isn't there.\
 				2 = The elytra can ONLY go in the wings slots, not the chestplate slot.""");
-		baublesMending = getBoolean("baublesMending", catMisc, true, "If Baubles (or Baubles Expanded) is installed, allows the Mending enchantment to repair items that are worn in bauble slots when experience is collected.\nThis option does nothing if Baubles (or BE) is not installed or if the Mending enchantment is disabled.");
+		baublesMending = getBoolean("baublesMending", catMisc, false, "If Baubles (or Baubles Expanded) is installed, allows the Mending enchantment to repair items that are worn in bauble slots when experience is collected.\nThis option does nothing if Baubles (or BE) is not installed or if the Mending enchantment is disabled.");
 		soulFireColor = (short) getInt("soulFireColor", catRPLE, 0x49A, 0x000, 0xFFF, """
 						The color of soul fire. Needs to be a separate option because it's a mixin for fire and not a meta state.
 						Does not have any effect on the color of soul lanterns or soul torches. Check the RPLE colors config for those.""");
 
-		moddedRawOres = getBoolean("moddedRawOres", catMisc, true, "Raw ores for modded metals. Adds a set of \"general\" raw ores for common metals like \"oreAluminium\", \"oreTin\", etc.");
+		moddedRawOres = getBoolean("moddedRawOres", catMisc, false, "Raw ores for modded metals. Adds a set of \"general\" raw ores for common metals like \"oreAluminium\", \"oreTin\", etc.");
 		moddedRawOresBlacklist = Lists.newArrayList(getStringList("moddedRawOresBlacklist", catMisc, new String[0], """
 				List of modded raw ores to disable. Add a ModID or ore dictionary tag. For example adding "oreTin" disables modded raw tin, and adding "SimpleOres" would disable raw adamantium ore. CaSe-SeNsItIvE!\
 				Each entry is separated by a new line. This only disables raw ores added from Et Futurum's end and will not affect raw ores from other mods."""));
-		moddedDeepslateOres = getBoolean("moddedDeepslateOres", catMisc, true, "Deepslate ores for modded ores. Adds a set of \"general\" deepslate ores for common metals like \"oreAluminium\", \"oreTin\", etc, as well as explicit support for numerous mods.");
+		moddedDeepslateOres = getBoolean("moddedDeepslateOres", catMisc, false, "Deepslate ores for modded ores. Adds a set of \"general\" deepslate ores for common metals like \"oreAluminium\", \"oreTin\", etc, as well as explicit support for numerous mods.");
 		moddedDeepslateOresBlacklist = Lists.newArrayList(getStringList("moddedDeepslateOresBlacklist", catMisc, new String[0], """
 				List of modded deepslate ores to disable. Add a ModID or ore dictionary tag. For example adding "oreTin" disables deepslate tin, and adding "SimpleOres" would disable deepslate adamantium ore. CaSe-SeNsItIvE!\
 				Each entry is separated by a new line. This only disables deepslate ores added from Et Futurum's end and will not affect deepslate ores from other mods."""));

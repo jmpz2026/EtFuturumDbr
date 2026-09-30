@@ -35,13 +35,13 @@ public class ConfigTweaks extends ConfigBase {
 
 	@Override
 	protected void syncConfigOptions() {
-		dyableShulkers = getBoolean("dyableShulkers", catBedrockParity, true, "Clicking a Shulker to dye them. As an added bonus, you can also click them with a water bucket (water is not consumed) or pour water on them to remove the dye.");
+		dyableShulkers = getBoolean("dyableShulkers", catBedrockParity, false, "Clicking a Shulker to dye them. As an added bonus, you can also click them with a water bucket (water is not consumed) or pour water on them to remove the dye.");
 
-		enableRoses = getBoolean("enableOldRoses", catAbandoned, true, "");
-		enableOldGravel = getBoolean("enableOldGravel", catAbandoned, true, "");
+		enableRoses = getBoolean("enableOldRoses", catAbandoned, false, "");
+		enableOldGravel = getBoolean("enableOldGravel", catAbandoned, false, "");
 
 		shulkersSpawnAnywhere = getBoolean("shulkersSpawnAnywhere", catCustomTweaks, false, "For compatibility reasons, you may want the Shulker to spawn anywhere in the End in random groups like Endermen. These are uncommon.\nShulkers spawned in this way will despawn naturally, unless seated, given armor through a dispenser, or name tagged. Right now Shulkers are otherwise inacessible.");
-		spawnAnywhereShulkerColors = getBoolean("spawnAnywhereShulkerColors", catCustomTweaks, true, "If spawn anywhere is enabled, spawn Shulkers matching the color of modded biome blocks. Currently supports Enderlicious and Hardcore Ender Expansion terrain blocks.");
+		spawnAnywhereShulkerColors = getBoolean("spawnAnywhereShulkerColors", catCustomTweaks, false, "If spawn anywhere is enabled, spawn Shulkers matching the color of modded biome blocks. Currently supports Enderlicious and Hardcore Ender Expansion terrain blocks.");
 		deepslateReplacesCobblestone = getBoolean("deepslateReplacesCobblestone", catCustomTweaks, false, "If you want cobblestone to be replaced with cobbled deepslate during world generation.");
 		stonecutterSawHurts = getBoolean("stonecutterSawHurts", catCustomTweaks, false, "If you want stonecutters to deal damage to players standing on them.");
 		squidsBlindPlayers = getBoolean("squidsBlindPlayers", catCustomTweaks, false, "Squids will blind players when they take damage.");

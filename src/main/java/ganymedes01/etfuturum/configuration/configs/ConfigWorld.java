@@ -99,13 +99,13 @@ public class ConfigWorld extends ConfigBase {
 
 	@Override
 	protected void syncConfigOptions() {
-		enableDmgIndicator = getBoolean("enableDmgIndicator", catClient, true, "Heart Damage Indicator");
+		enableDmgIndicator = getBoolean("enableDmgIndicator", catClient, false, "Heart Damage Indicator");
 
-		endFlashes = getBoolean("endFlashes", catClient, true, "Allow The End dimension to have periodic flashes of light in the sky");
-		modernEndAmbientColor = getBoolean("modernEndAmbientColor", catClient, true, "Rebuild The End's lightmap to match modern Minecraft.");
-		modernLightmapGamma = getBoolean("modernLightmapGamma", catClient, true, "Replaces the vanilla brightness-slider curve with the modern hue and saturation preserving one.");
-		modernBlockLightTint = getBoolean("modernBlockLightTint", catClient, true, "Adjust block light color and gradient to match modern Minecraft.");
-		modernNightVision = getBoolean("modernNightVision", catClient, true, "Adjust night vision to match modern Minecraft.");
+		endFlashes = getBoolean("endFlashes", catClient, false, "Allow The End dimension to have periodic flashes of light in the sky");
+		modernEndAmbientColor = getBoolean("modernEndAmbientColor", catClient, false, "Rebuild The End's lightmap to match modern Minecraft.");
+		modernLightmapGamma = getBoolean("modernLightmapGamma", catClient, false, "Replaces the vanilla brightness-slider curve with the modern hue and saturation preserving one.");
+		modernBlockLightTint = getBoolean("modernBlockLightTint", catClient, false, "Adjust block light color and gradient to match modern Minecraft.");
+		modernNightVision = getBoolean("modernNightVision", catClient, false, "Adjust night vision to match modern Minecraft.");
 		enableAirDebris = getBoolean("enableAirDebris", catGeneration, false, "Can ancient debris generate next to air?");
 		maxStonesPerCluster = getInt("maxStonesPerCluster", catGeneration, 32, 0, 64, "Max vein size for Granite/Andesite/Diorite blocks in a cluster");
 		smallDebrisMax = getInt("smallDebrisMax", catGeneration, 2, 0, 64, "The max vein size for the first, typically smaller debris veins which generate from Y 8 to 119");
@@ -118,7 +118,7 @@ public class ConfigWorld extends ConfigBase {
 		deepslateReplacesStones = getBoolean("deepslateReplacesStones", catGeneration, true, "Whether or not Deepslate will overwrite granite, diorite, andesite (Only works when deepslate generation mode is set to 0)");
 		deepslateReplacesDirt = getBoolean("deepslateReplacesDirt", catGeneration, true, "Whether or not Deepslate will overwrite dirt (Only works when deepslate generation mode is set to 0)");
 		deepslateGenerationMode = getInt("deepslateGenerationMode", catGeneration, 0, -1, 1, "If 0, deepslate replaces all stone below the specified value, with a shattering effect near the top similar to bedrock. If 1, it generates in clusters using the deepslate cluster settings. -1 disables Et Futurum deepslate generation entirely.");
-		enableOceanMonuments = getBoolean("enableOceanMonuments", catGeneration, true, "Note: Ocean monuments currently do not have guardians");
+		enableOceanMonuments = getBoolean("enableOceanMonuments", catGeneration, false, "Note: Ocean monuments currently do not have guardians");
 		enableFossils = getBoolean("enableFossils", catGeneration, true, "");
 		if (hasKey(catGeneration, "fossilBoneBlock")) {
 			Property oldFossilIDProp = get(catGeneration, "fossilBoneBlock", 0);
@@ -158,7 +158,7 @@ public class ConfigWorld extends ConfigBase {
 			get(catGeneration, "amethystOuterBlockID", "etfuturum:bone").set(amethystOuterBlockID);
 			save();
 		}
-		amethystOuterBlockID = getString("amethystOuterBlockID", catGeneration, "etfuturum:smooth_basalt", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the outer layer of amethyst geodes.\nThe outer layer was formerly \"etfuturum:tuff\" before it was changed in later 1.17 snapshots. Netherlicious smooth basalt is \"netherlicious:BasaltBricks:6\"\nIf the chosen block does not exist then amethyst geodes will not generate.");
+		amethystOuterBlockID = getString("amethystOuterBlockID", catGeneration, "etfuturum:tuff", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the outer layer of amethyst geodes.\nThe outer layer was formerly \"etfuturum:tuff\" before it was changed in later 1.17 snapshots. Netherlicious smooth basalt is \"netherlicious:BasaltBricks:6\"\nIf the chosen block does not exist then amethyst geodes will not generate.");
 
 		amethystMiddleBlockID = getString("amethystMiddleBlockID", catGeneration, "etfuturum:calcite", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the middle layer of amethyst geodes.\nIf the chosen block does not exist then amethyst geodes will not generate.");
 

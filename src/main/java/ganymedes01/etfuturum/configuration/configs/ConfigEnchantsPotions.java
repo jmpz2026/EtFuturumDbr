@@ -30,11 +30,11 @@ public class ConfigEnchantsPotions extends ConfigBase {
 	@Override
 	protected void syncConfigOptions() {
 		//enchants
-		enableFrostWalker = getBoolean("frostWalker", catEnchants, true, "");
+		enableFrostWalker = getBoolean("frostWalker", catEnchants, false, "");
 		frostWalkerID = getInt("frostWalkerID", catEnchants, 200, 0, Short.MAX_VALUE, "");
-		enableMending = getBoolean("mending", catEnchants, true, "");
+		enableMending = getBoolean("mending", catEnchants, false, "");
 		mendingID = getInt("mendingID", catEnchants, 201, 0, Short.MAX_VALUE, "");
-		enableSwiftSneak = getBoolean("swiftSneak", catEnchants, true, "");
+		enableSwiftSneak = getBoolean("swiftSneak", catEnchants, false, "");
 		swiftSneakID = getInt("swiftSneakID", catEnchants, 202, 0, Short.MAX_VALUE, "");
 
 		//potions

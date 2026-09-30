@@ -45,8 +45,9 @@ public class BlockSmithingTable extends Block {
 
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float subX, float subY, float subZ) {
-		if (!world.isRemote)
-			player.openGui(EtFuturum.instance, GUIIDs.SMITHING_TABLE, world, x, y, z);
-		return true;
+		// EtFuturumDbr: decorative only. Without netherite the table has no recipes, and its
+		// container never checks that the block is still there (canInteractWith is always true),
+		// which is the kind of hole dupes use. The GUI comes back with the DbrForja integration.
+		return false;
 	}
 }

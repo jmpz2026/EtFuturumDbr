@@ -47,28 +47,28 @@ public class ConfigEntities extends ConfigBase {
 	@Override
 	protected void syncConfigOptions() {
 		//passive
-		enableRabbit = getBoolean("enableRabbits", catPassive, true, "");
-		enableBrownMooshroom = getBoolean("enableBrownMooshroom", catPassive, true, "Brown mooshroom variant, the red mooshrooms turn into then when they are hit by lightning.");
-		enableFoxes = getBoolean("enableFoxes", catPassive, true, "");
+		enableRabbit = getBoolean("enableRabbits", catPassive, false, "");
+		enableBrownMooshroom = getBoolean("enableBrownMooshroom", catPassive, false, "Brown mooshroom variant, the red mooshrooms turn into then when they are hit by lightning.");
+		enableFoxes = getBoolean("enableFoxes", catPassive, false, "");
 
 		//neutral
 		enableBees = getBoolean("enableBees", catNeutral, true, "");
 
 		//hostile
-		enableEndermite = getBoolean("enableEndermite", catHostile, true, "Rarely spawns when the player lands from Ender Pearl throws");
-		enableHusk = getBoolean("enableHusks", catHostile, true, "Desert zombie variant");
-		enableStray = getBoolean("enableStrays", catHostile, true, "Tundra skeleton variant");
-		enableShulker = getBoolean("enableShulker", catHostile, true, "Shell-lurking mobs from the End.");
-		enableVillagerZombies = getBoolean("enableZombieVillager", catHostile, true, "");
-        enableModernWither = getBoolean("enableModernWither", catHostile, true, "Introduces the modern behavior of the wither on spawning.");
+		enableEndermite = getBoolean("enableEndermite", catHostile, false, "Rarely spawns when the player lands from Ender Pearl throws");
+		enableHusk = getBoolean("enableHusks", catHostile, false, "Desert zombie variant");
+		enableStray = getBoolean("enableStrays", catHostile, false, "Tundra skeleton variant");
+		enableShulker = getBoolean("enableShulker", catHostile, false, "Shell-lurking mobs from the End.");
+		enableVillagerZombies = getBoolean("enableZombieVillager", catHostile, false, "");
+        enableModernWither = getBoolean("enableModernWither", catHostile, false, "Introduces the modern behavior of the wither on spawning.");
 
 		//function
-		enableShearableSnowGolems = getBoolean("enableShearableSnowGolems", catMisc, true, "");
-		enableBabyGrowthBoost = getBoolean("enableBabyGrowthBoost", catMisc, true, "");
-		enableVillagerTurnsIntoWitch = getBoolean("enableVillagerTurnsIntoWitch", catMisc, true, "Villagers turn into Witches when struck by lightning");
-		enableDragonRespawn = getBoolean("enableDragonRespawn", catMisc, true, "Crude implementation of respawning the dragon using four End crystals.");
-		enableNetherEndermen = getBoolean("enableNetherEndermen", catMisc, true, "Allow endermen to rarely spawn in the Nether");
-		enableSquidInk = getBoolean("enableSquidInk", catMisc, true, "Squid now produce a cloud of floating black ink particles when attacked.");
+		enableShearableSnowGolems = getBoolean("enableShearableSnowGolems", catMisc, false, "");
+		enableBabyGrowthBoost = getBoolean("enableBabyGrowthBoost", catMisc, false, "");
+		enableVillagerTurnsIntoWitch = getBoolean("enableVillagerTurnsIntoWitch", catMisc, false, "Villagers turn into Witches when struck by lightning");
+		enableDragonRespawn = getBoolean("enableDragonRespawn", catMisc, false, "Crude implementation of respawning the dragon using four End crystals.");
+		enableNetherEndermen = getBoolean("enableNetherEndermen", catMisc, false, "Allow endermen to rarely spawn in the Nether");
+		enableSquidInk = getBoolean("enableSquidInk", catMisc, false, "Squid now produce a cloud of floating black ink particles when attacked.");
 	}
 
 }

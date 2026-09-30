@@ -1,3 +1,12 @@
+# EtFuturumDbr: modified version of Et Futurum Requiem
+
+**This is a MODIFIED version** of [GTNewHorizons/Et-Futurum-Requiem](https://github.com/GTNewHorizons/Et-Futurum-Requiem)
+(tag `2.6.59-GTNH`), maintained by Machitos for the Dragon Block Resurrection server
+(Minecraft 1.7.10, Crucible, Dragon Block C). It keeps the LGPL-3.0 license of the original. The
+changes are listed in [DBR-CHANGES.md](DBR-CHANGES.md); the full history is the `dbr` branch.
+
+---
+
 # Et Futurum Requiem
 
 **Download: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/et-futurum-requiem/files)
