@@ -113,6 +113,7 @@ public class WorldEventHandler {
 
 	@SubscribeEvent
 	public void onSaplingGrow(SaplingGrowTreeEvent event) {//5% chance to run this logic.
+		if (!ganymedes01.etfuturum.dbr.util.DbrWorlds.generatesIn(event.world)) return; // EtFuturumDbr
 		if (ModBlocks.BEE_NEST.isEnabled() && event.rand.nextFloat() <= 0.05F && isFlowerNearby(event.world, event.x, event.y, event.z)) {
 			//TODO: Mangrove and cherry trees should be here when they are added. Maybe support modded saplings too
 			Block sapling = event.world.getBlock(event.x, event.y, event.z);
@@ -156,6 +157,7 @@ public class WorldEventHandler {
 	 */
 	@SubscribeEvent
 	public void onTreeGenerated(PostTreeGenerateEvent event) {
+		if (!ganymedes01.etfuturum.dbr.util.DbrWorlds.generatesIn(event.world)) return; // EtFuturumDbr
 		if (ModBlocks.BEE_NEST.isEnabled() && event.world.provider instanceof WorldProviderSurface) {
 			BiomeGenBase biome = event.world.getBiomeGenForCoords(event.x, event.z);
 			if (BEE_NEST_BIOMES.containsKey(biome) && event.rand.nextFloat() <= BEE_NEST_BIOMES.get(biome)) {

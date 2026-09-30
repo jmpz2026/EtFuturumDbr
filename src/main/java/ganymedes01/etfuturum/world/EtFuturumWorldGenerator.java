@@ -189,6 +189,7 @@ public class EtFuturumWorldGenerator implements IWorldGenerator {
 
 	@Override
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+		if (!ganymedes01.etfuturum.dbr.util.DbrWorlds.generatesIn(world)) return; // EtFuturumDbr
 		if (!isFlatWorld(chunkGenerator) || world.getWorldInfo().getGeneratorOptions().contains("decoration")) {
 			int x;
 			int z;

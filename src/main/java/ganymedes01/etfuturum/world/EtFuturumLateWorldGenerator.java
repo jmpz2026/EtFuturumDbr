@@ -43,6 +43,7 @@ public class EtFuturumLateWorldGenerator extends EtFuturumWorldGenerator {
 
 	@Override
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+		if (!ganymedes01.etfuturum.dbr.util.DbrWorlds.generatesIn(world)) return; // EtFuturumDbr
 		Chunk chunk = null;
 		//Used to check if we're generating in a flat world
 		if (doesChunkSupportLayerDeepslate(chunkGenerator, world.provider.dimensionId)) {

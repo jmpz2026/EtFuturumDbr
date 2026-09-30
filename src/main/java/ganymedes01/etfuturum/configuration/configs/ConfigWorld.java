@@ -43,6 +43,8 @@ public class ConfigWorld extends ConfigBase {
 	public static boolean enableFossils;
 	public static int maxTuffPerCluster;
 	public static int[] fossilDimensionBlacklist;
+	/** EtFuturumDbr: worlds (by folder name) where Et Futurum generates anything. Empty = every world. */
+	public static String[] dbrGenerationWorlds;
 	public static boolean fossilDimensionBlacklistAsWhitelist;
 	public static int tileReplacementMode;
 	public static int maxStonesPerCluster;
@@ -159,6 +161,10 @@ public class ConfigWorld extends ConfigBase {
 		amethystOuterBlockID = getString("amethystOuterBlockID", catGeneration, "etfuturum:smooth_basalt", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the outer layer of amethyst geodes.\nThe outer layer was formerly \"etfuturum:tuff\" before it was changed in later 1.17 snapshots. Netherlicious smooth basalt is \"netherlicious:BasaltBricks:6\"\nIf the chosen block does not exist then amethyst geodes will not generate.");
 
 		amethystMiddleBlockID = getString("amethystMiddleBlockID", catGeneration, "etfuturum:calcite", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the middle layer of amethyst geodes.\nIf the chosen block does not exist then amethyst geodes will not generate.");
+
+		Property dbrWorldsProp = get(catGeneration, "dbrGenerationWorlds", new String[]{"tierra", "survival"});
+		dbrWorldsProp.comment = "EtFuturumDbr: world folder names (the Multiverse world names) where Et Futurum generates ANYTHING: deepslate, ores, geodes, fossils, new stones, trees, flowers, bee nests...\nOther worlds are left exactly as vanilla and the other mods generate them. Empty = every world (upstream behaviour).\nBy name and not by dimension ID: Crucible assigns the IDs of Multiverse worlds and they can change when a world is recreated.";
+		dbrGenerationWorlds = dbrWorldsProp.getStringList();
 
 		Property fossilBlacklistProp = get(catGeneration, "fossilDimensionBlacklist", new int[]{});
 		fossilBlacklistProp.comment = "The dimension IDs of the dimensions the fossil structures should not spawn in. Fossils will also not spawn in any dimension that is not an instance of WorldProviderSurface";
