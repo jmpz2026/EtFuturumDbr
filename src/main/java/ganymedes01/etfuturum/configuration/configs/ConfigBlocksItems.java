@@ -184,10 +184,10 @@ public class ConfigBlocksItems extends ConfigBase {
 		//Natural Blocks
 		enableStones = getBoolean("enableStones", catBlockNatural, true, "Enable Granite/Andesite/Diorite");
 		enableNetherGold = getBoolean("enableNetherGold", catBlockNatural, false, "");
-		enablePrismarine = getBoolean("enablePrismarine", catBlockNatural, false, "");
+		enablePrismarine = getBoolean("enablePrismarine", catBlockNatural, true, "");
 		enableCoarseDirt = getBoolean("enableCoarseDirt", catBlockNatural, true, "");
 		enableRedSandstone = getBoolean("enableRedSandstone", catBlockNatural, true, "");
-		enableChorusFruit = getBoolean("enableChorusBlocks", catBlockNatural, false, "Enables chorus plants and purpur blocks");
+		enableChorusFruit = getBoolean("enableChorusBlocks", catBlockNatural, true, "Enables chorus plants and purpur blocks");
 		enableGrassPath = getBoolean("enableGrassPath", catBlockNatural, true, "");
 		enableCryingObsidian = getBoolean("enableCryingObsidian", catBlockNatural, false, "");
 		enableNewNetherBricks = getBoolean("enableRedNetherBricks", catBlockMisc, false, "Note: Also enables cracked and chiseled nether bricks as they use this ID too");

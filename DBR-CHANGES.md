@@ -31,6 +31,11 @@ The full option-by-option table with the reason of each one is kept in the serve
 repo (`EFR-OPCIONES.md`). Also `amethystOuterBlockID` = `etfuturum:tuff` (basalt belongs to the
 Nether, which is off). An existing `.cfg` still wins over these defaults.
 
+The End blocks (`enableChorusBlocks`: purpur, end bricks, end rod, chorus) and the prismarine
+blocks (`enablePrismarine`, with the sea lantern) are on, but only as decoration. Nothing generates
+them and nothing produces their ingredients: ocean monuments, `enablePrismarineRecipes` and the
+End are all off, and the End is not in `dbrGenerationWorlds`. Players get them from the server.
+
 ## 4. Smithing table without GUI
 Decorative only: without netherite it has no recipes, and its container never checks that the
 block is still there (`canInteractWith` is always `true`). The GUI comes back with the server's
