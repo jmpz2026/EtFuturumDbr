@@ -15,7 +15,7 @@ into an instance field). Et Futurum only used three small GTNHLib utilities, cop
 UniMixins 0.1.23 or newer is still required (one mixin uses MixinExtras 0.5 expressions).
 
 ## 2. Generation only in listed worlds, by name
-New option `dbrGenerationWorlds` (`world.cfg`, category `generation`, default `tierra, survival`):
+New option `dbrGenerationWorlds` (`world.cfg`, category `generation`, default `tierra`):
 Et Futurum generates nothing in any other world (deepslate, ores, geodes, fossils, new stones,
 trees, flowers, bee nests on trees and on grown saplings). Matched by world FOLDER name, not
 dimension ID: Crucible assigns the IDs of Multiverse worlds and they can change. Empty list =

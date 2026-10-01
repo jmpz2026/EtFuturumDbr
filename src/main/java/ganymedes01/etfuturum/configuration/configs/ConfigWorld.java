@@ -162,7 +162,7 @@ public class ConfigWorld extends ConfigBase {
 
 		amethystMiddleBlockID = getString("amethystMiddleBlockID", catGeneration, "etfuturum:calcite", "Use a namespaced ID, + optionally meta (max 15) to choose the block that makes up the middle layer of amethyst geodes.\nIf the chosen block does not exist then amethyst geodes will not generate.");
 
-		Property dbrWorldsProp = get(catGeneration, "dbrGenerationWorlds", new String[]{"tierra", "survival"});
+		Property dbrWorldsProp = get(catGeneration, "dbrGenerationWorlds", new String[]{"tierra"});
 		dbrWorldsProp.comment = "EtFuturumDbr: world folder names (the Multiverse world names) where Et Futurum generates ANYTHING: deepslate, ores, geodes, fossils, new stones, trees, flowers, bee nests...\nOther worlds are left exactly as vanilla and the other mods generate them. Empty = every world (upstream behaviour).\nBy name and not by dimension ID: Crucible assigns the IDs of Multiverse worlds and they can change when a world is recreated.";
 		dbrGenerationWorlds = dbrWorldsProp.getStringList();
 
