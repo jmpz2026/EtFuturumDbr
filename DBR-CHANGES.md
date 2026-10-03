@@ -29,7 +29,8 @@ The defaults of the `Config*` classes follow the server's selection (Constructio
 World, Bees; no Nether, copper, new mobs except bees, render tweaks, combat or movement changes).
 The full option-by-option table with the reason of each one is kept in the server's planning
 repo (`EFR-OPCIONES.md`). Also `amethystOuterBlockID` = `etfuturum:tuff` (basalt belongs to the
-Nether, which is off). An existing `.cfg` still wins over these defaults.
+Nether, which is off), and `cherryTreeRarity` = 24 instead of 72 (the survival world generates with
+RTGDbr, whose mountains are bigger). An existing `.cfg` still wins over these defaults.
 
 The End blocks (`enableChorusBlocks`: purpur, end bricks, end rod, chorus) and the prismarine
 blocks (`enablePrismarine`, with the sea lantern) are on, but only as decoration. Nothing generates
