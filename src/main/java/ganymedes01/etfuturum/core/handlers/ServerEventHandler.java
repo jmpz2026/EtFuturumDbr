@@ -1072,7 +1072,7 @@ public class ServerEventHandler {
 						}
 
 						// --- Lilypad sounds --- //
-						if (ConfigSounds.newBlockSounds && heldStack != null && Block.getBlockFromItem(heldStack.getItem()) instanceof BlockLilyPad) {
+						if (ConfigSounds.newBlockSounds && ConfigSounds.newBlockSoundsVanilla && heldStack != null && Block.getBlockFromItem(heldStack.getItem()) instanceof BlockLilyPad) {
 							Block block = Block.getBlockFromItem(heldStack.getItem());
 							MovingObjectPosition movingobjectposition = getMovingObjectPositionFromPlayer(world, player, true);
 							if (movingobjectposition == null) {

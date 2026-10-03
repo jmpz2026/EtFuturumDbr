@@ -96,6 +96,7 @@ public class ConfigSounds extends ConfigBase {
 	public static boolean seedPlanting;
 	public static boolean fluidInteract;
 	public static boolean newBlockSounds;
+	public static boolean newBlockSoundsVanilla;
 	public static boolean furnaceCrackling;
 	public static boolean bonemealing;
 	public static boolean heavyWaterSplashing;
@@ -134,12 +135,13 @@ public class ConfigSounds extends ConfigBase {
 
 		noteBlockNotes = getBoolean("noteBlockNotes", catBlocksItems, false, "The new instruments from 1.12 and 1.14 for note blocks.");
 		endPortalFillSounds = getBoolean("endPortalFillSounds", catBlocksItems, false, "Sounds for filling an end portal with eyes of ender, plays a sound to the whole server when fully lit.");
-		doorOpenClose = getBoolean("doorOpenClose", catBlocksItems, true, "New sounds for opening and closing doors, only affects doors with the wood or metal material type.");
+		doorOpenClose = getBoolean("doorOpenClose", catBlocksItems, false, "New sounds for opening and closing doors, only affects doors with the wood or metal material type.");
 		chestOpenClose = getBoolean("chestOpenClose", catBlocksItems, false, "New sounds for closing wooden chests, and new sounds for opening and closing ender chests. Works with Ender Storage.");
-		pressurePlateButton = getBoolean("pressurePlateButton", catBlocksItems, true, "Lower-pitched clicking sounds for buttons and pressure plates. Stone buttons are unaffected.");
+		pressurePlateButton = getBoolean("pressurePlateButton", catBlocksItems, false, "Lower-pitched clicking sounds for buttons and pressure plates. Stone buttons are unaffected.");
 		seedPlanting = getBoolean("seedPlanting", catBlocksItems, false, "Planting seeds or nether wart onto farmland/soulsand.");
 		fluidInteract = getBoolean("fluidInteract", catBlocksItems, false, "Play a sound when filling or emptying a bucket/bottle. Plays sounds for filling/emptying cauldrons too but works on vanilla cauldrons only.");
 		newBlockSounds = getBoolean("newBlockSounds", catBlocksItems, true, "Many blocks after 1.14 introduce a new step sound, if this is turned off most backported blocks will use the most suitable step sound present in vanilla 1.7.10.");
+		newBlockSoundsVanilla = getBoolean("newBlockSoundsVanilla", catBlocksItems, false, "Also give the new step sounds to old blocks (netherrack, nether bricks, soul sand, crops, vines, lily pads, sponge...) and to blocks of other mods. Needs newBlockSounds.\nDBR: those sounds are not bundled in the jar, enabling this makes those blocks silent.");
 		fixSilentPlacing = getBoolean("fixSilentPlacing", catBlocksItems, true, "Add placing sounds for blocks that don't play one for some reason such as doors or restone dust.");
 		furnaceCrackling = getBoolean("furnaceCrackling", catBlocksItems, true, "Adds furnace crackling to lit furnace blocks.");
 

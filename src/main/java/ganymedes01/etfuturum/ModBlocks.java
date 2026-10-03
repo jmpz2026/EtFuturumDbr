@@ -438,7 +438,7 @@ public enum ModBlocks {
 
 	STONE_WALL(ConfigBlocksItems.enableExtraVanillaWalls, new BlockStoneWall()),
 	NETHER_BRICK_WALL(ConfigBlocksItems.enableExtraVanillaWalls, new BaseWall(Material.rock, "nether_brick")
-			.setBlockSound(ModSounds.soundNetherBricks).setHardness(2F).setResistance(6F)),
+			.setBlockSound(Block.soundTypePiston) /* DBR: same as vanilla nether bricks */.setHardness(2F).setResistance(6F)),
 	STONE_WALL_2(ConfigBlocksItems.enableStones, new BaseWall(Material.rock, "granite", "diorite", "andesite")
 			.setHardness(1.5F).setResistance(6.0F)),
 	RED_SANDSTONE_WALL(ConfigBlocksItems.enableRedSandstone, new BaseWall(Material.rock, "red_sandstone")

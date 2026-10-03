@@ -1,0 +1,1868 @@
+{
+  "block.amethyst_block.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst/break1"
+      },
+      {
+        "name": "block/amethyst/break2"
+      },
+      {
+        "name": "block/amethyst/break3"
+      },
+      {
+        "name": "block/amethyst/break4"
+      }
+    ]
+  },
+  "block.amethyst_block.chime": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst/shimmer",
+        "volume": 0.2
+      }
+    ]
+  },
+  "block.amethyst_block.hit": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst/step1"
+      },
+      {
+        "name": "block/amethyst/step2"
+      },
+      {
+        "name": "block/amethyst/step3"
+      },
+      {
+        "name": "block/amethyst/step4"
+      },
+      {
+        "name": "block/amethyst/step5"
+      },
+      {
+        "name": "block/amethyst/step6"
+      },
+      {
+        "name": "block/amethyst/step7"
+      },
+      {
+        "name": "block/amethyst/step8"
+      },
+      {
+        "name": "block/amethyst/step9"
+      },
+      {
+        "name": "block/amethyst/step10"
+      },
+      {
+        "name": "block/amethyst/step11"
+      },
+      {
+        "name": "block/amethyst/step12"
+      }
+    ]
+  },
+  "block.amethyst_block.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst/place1"
+      },
+      {
+        "name": "block/amethyst/place2"
+      },
+      {
+        "name": "block/amethyst/place3"
+      },
+      {
+        "name": "block/amethyst/place4"
+      }
+    ]
+  },
+  "block.amethyst_block.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/amethyst/step1"
+      },
+      {
+        "name": "block/amethyst/step2"
+      },
+      {
+        "name": "block/amethyst/step3"
+      },
+      {
+        "name": "block/amethyst/step4"
+      },
+      {
+        "name": "block/amethyst/step5"
+      },
+      {
+        "name": "block/amethyst/step6"
+      },
+      {
+        "name": "block/amethyst/step7"
+      },
+      {
+        "name": "block/amethyst/step8"
+      },
+      {
+        "name": "block/amethyst/step9"
+      },
+      {
+        "name": "block/amethyst/step10"
+      },
+      {
+        "name": "block/amethyst/step11"
+      },
+      {
+        "name": "block/amethyst/step12"
+      },
+      {
+        "name": "block/amethyst/step13"
+      },
+      {
+        "name": "block/amethyst/step14"
+      }
+    ]
+  },
+  "block.amethyst_cluster.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/break1",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/amethyst_cluster/break2",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/amethyst_cluster/break3",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/amethyst_cluster/break4",
+        "volume": 0.8,
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.amethyst_cluster.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/place1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/amethyst_cluster/place2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/amethyst_cluster/place3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/amethyst_cluster/place4",
+        "volume": 0.9
+      }
+    ]
+  },
+  "block.amethyst_cluster.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/amethyst/step1"
+      },
+      {
+        "name": "block/amethyst/step2"
+      },
+      {
+        "name": "block/amethyst/step3"
+      },
+      {
+        "name": "block/amethyst/step4"
+      },
+      {
+        "name": "block/amethyst/step5"
+      },
+      {
+        "name": "block/amethyst/step6"
+      },
+      {
+        "name": "block/amethyst/step7"
+      },
+      {
+        "name": "block/amethyst/step8"
+      },
+      {
+        "name": "block/amethyst/step9"
+      },
+      {
+        "name": "block/amethyst/step10"
+      },
+      {
+        "name": "block/amethyst/step11"
+      },
+      {
+        "name": "block/amethyst/step12"
+      },
+      {
+        "name": "block/amethyst/step13"
+      },
+      {
+        "name": "block/amethyst/step14"
+      }
+    ]
+  },
+  "block.bamboo.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/bamboo/place1",
+        "volume": 0.8
+      },
+      {
+        "name": "block/bamboo/place2",
+        "volume": 0.8
+      },
+      {
+        "name": "block/bamboo/place3",
+        "volume": 0.8
+      },
+      {
+        "name": "block/bamboo/place4",
+        "volume": 0.8
+      },
+      {
+        "name": "block/bamboo/place5",
+        "volume": 0.8
+      },
+      {
+        "name": "block/bamboo/place6",
+        "volume": 0.8
+      }
+    ]
+  },
+  "block.bamboo.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/bamboo/step1"
+      },
+      {
+        "name": "block/bamboo/step2",
+        "pitch": 0.7
+      },
+      {
+        "name": "block/bamboo/step3"
+      },
+      {
+        "name": "block/bamboo/step4",
+        "pitch": 0.7
+      },
+      {
+        "name": "block/bamboo/step5"
+      },
+      {
+        "name": "block/bamboo/step6"
+      }
+    ]
+  },
+  "block.bamboo_sapling.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/bamboo/sapling_place1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place4",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place5",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place6",
+        "volume": 0.9
+      }
+    ]
+  },
+  "block.bamboo_wood.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/bamboo_wood/break1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo_wood/break2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo_wood/break3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo_wood/break4",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo_wood/break5",
+        "volume": 0.9
+      }
+    ]
+  },
+  "block.bamboo_wood.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/bamboo_wood/step1"
+      },
+      {
+        "name": "block/bamboo_wood/step2"
+      },
+      {
+        "name": "block/bamboo_wood/step3"
+      },
+      {
+        "name": "block/bamboo_wood/step4"
+      },
+      {
+        "name": "block/bamboo_wood/step5"
+      },
+      {
+        "name": "block/bamboo_wood/step6"
+      }
+    ]
+  },
+  "block.beehive.drip": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/beehive/drip1",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip1",
+        "volume": 0.3,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/drip2",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip2",
+        "volume": 0.3,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/drip3",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip3",
+        "volume": 0.3,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/drip4",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip4",
+        "volume": 0.3,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/drip5",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip5",
+        "volume": 0.3,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/drip6",
+        "volume": 0.3,
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/drip6",
+        "volume": 0.3,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "block.beehive.enter": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/beehive/enter",
+        "pitch": 0.7
+      },
+      {
+        "name": "block/beehive/enter",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.beehive.exit": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/beehive/exit"
+      },
+      {
+        "name": "block/beehive/exit",
+        "pitch": 0.9
+      },
+      {
+        "name": "block/beehive/exit",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "block.beehive.shear": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "block/beehive/shear",
+        "volume": 0.8
+      },
+      {
+        "name": "block/beehive/shear",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/beehive/shear",
+        "volume": 0.8,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "block.beehive.work": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/beehive/work1",
+        "volume": 0.6
+      },
+      {
+        "name": "block/beehive/work2",
+        "volume": 0.6
+      },
+      {
+        "name": "block/beehive/work3",
+        "volume": 0.6
+      },
+      {
+        "name": "block/beehive/work4",
+        "volume": 0.6
+      }
+    ]
+  },
+  "block.blastfurnace.fire_crackle": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/blastfurnace/blastfurnace1"
+      },
+      {
+        "name": "block/blastfurnace/blastfurnace2"
+      },
+      {
+        "name": "block/blastfurnace/blastfurnace3"
+      },
+      {
+        "name": "block/blastfurnace/blastfurnace4"
+      },
+      {
+        "name": "block/blastfurnace/blastfurnace5"
+      }
+    ]
+  },
+  "block.bone_block.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/bone_block/break1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bone_block/break2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bone_block/break3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bone_block/break4",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bone_block/break5",
+        "volume": 0.9
+      }
+    ]
+  },
+  "block.bone_block.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/bone_block/step1"
+      },
+      {
+        "name": "block/bone_block/step2"
+      },
+      {
+        "name": "block/bone_block/step3"
+      },
+      {
+        "name": "block/bone_block/step4"
+      },
+      {
+        "name": "block/bone_block/step5"
+      }
+    ]
+  },
+  "block.calcite.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/calcite/break1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/calcite/break2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/calcite/break3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/calcite/break4",
+        "volume": 0.9
+      }
+    ]
+  },
+  "block.calcite.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/calcite/place1",
+        "volume": 0.94
+      },
+      {
+        "name": "block/calcite/place2",
+        "volume": 0.94
+      },
+      {
+        "name": "block/calcite/place3",
+        "volume": 0.94
+      },
+      {
+        "name": "block/calcite/place4",
+        "volume": 0.94
+      }
+    ]
+  },
+  "block.calcite.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/calcite/step1"
+      },
+      {
+        "name": "block/calcite/step2"
+      },
+      {
+        "name": "block/calcite/step3"
+      },
+      {
+        "name": "block/calcite/step4"
+      },
+      {
+        "name": "block/calcite/step5"
+      },
+      {
+        "name": "block/calcite/step6"
+      }
+    ]
+  },
+  "block.chain.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/chain/break1",
+        "volume": 0.5
+      },
+      {
+        "name": "block/chain/break2",
+        "volume": 0.5
+      },
+      {
+        "name": "block/chain/break3",
+        "volume": 0.5
+      },
+      {
+        "name": "block/chain/break4",
+        "volume": 0.5
+      }
+    ]
+  },
+  "block.chain.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/chain/step1"
+      },
+      {
+        "name": "block/chain/step2"
+      },
+      {
+        "name": "block/chain/step3"
+      },
+      {
+        "name": "block/chain/step4"
+      },
+      {
+        "name": "block/chain/step5"
+      },
+      {
+        "name": "block/chain/step6"
+      }
+    ]
+  },
+  "block.cherry_leaves.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/cherry_leaves/break1"
+      },
+      {
+        "name": "block/cherry_leaves/break2"
+      },
+      {
+        "name": "block/cherry_leaves/break3"
+      },
+      {
+        "name": "block/cherry_leaves/break4"
+      },
+      {
+        "name": "block/cherry_leaves/break5"
+      }
+    ]
+  },
+  "block.cherry_leaves.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/cherry_leaves/step1"
+      },
+      {
+        "name": "block/cherry_leaves/step2"
+      },
+      {
+        "name": "block/cherry_leaves/step3"
+      },
+      {
+        "name": "block/cherry_leaves/step4"
+      },
+      {
+        "name": "block/cherry_leaves/step5"
+      }
+    ]
+  },
+  "block.cherry_sapling.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/bamboo/sapling_place1"
+      },
+      {
+        "name": "block/bamboo/sapling_place2"
+      },
+      {
+        "name": "block/bamboo/sapling_place3"
+      },
+      {
+        "name": "block/bamboo/sapling_place4"
+      },
+      {
+        "name": "block/bamboo/sapling_place5"
+      },
+      {
+        "name": "block/bamboo/sapling_place6"
+      }
+    ]
+  },
+  "block.cherry_sapling.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/bamboo/sapling_hit1"
+      },
+      {
+        "name": "block/bamboo/sapling_hit2"
+      },
+      {
+        "name": "block/bamboo/sapling_hit3"
+      },
+      {
+        "name": "block/bamboo/sapling_hit4"
+      },
+      {
+        "name": "block/bamboo/sapling_hit5"
+      }
+    ]
+  },
+  "block.cherry_wood.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/cherry_wood/break1"
+      },
+      {
+        "name": "block/cherry_wood/break2"
+      },
+      {
+        "name": "block/cherry_wood/break3"
+      },
+      {
+        "name": "block/cherry_wood/break4"
+      },
+      {
+        "name": "block/cherry_wood/break5"
+      }
+    ]
+  },
+  "block.cherry_wood.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/cherry_wood/step1"
+      },
+      {
+        "name": "block/cherry_wood/step2"
+      },
+      {
+        "name": "block/cherry_wood/step3"
+      },
+      {
+        "name": "block/cherry_wood/step4"
+      },
+      {
+        "name": "block/cherry_wood/step5"
+      },
+      {
+        "name": "block/cherry_wood/step6"
+      }
+    ]
+  },
+  "block.chorus_flower.death": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/chorus_flower/death1"
+      },
+      {
+        "name": "block/chorus_flower/death2"
+      },
+      {
+        "name": "block/chorus_flower/death3"
+      }
+    ]
+  },
+  "block.chorus_flower.grow": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/chorus_flower/grow1"
+      },
+      {
+        "name": "block/chorus_flower/grow2"
+      },
+      {
+        "name": "block/chorus_flower/grow3"
+      },
+      {
+        "name": "block/chorus_flower/grow4"
+      }
+    ]
+  },
+  "block.composter.empty": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/composter/empty1"
+      },
+      {
+        "name": "block/composter/empty2"
+      },
+      {
+        "name": "block/composter/empty3"
+      }
+    ]
+  },
+  "block.composter.fill": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/composter/fill1",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/composter/fill2",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/composter/fill3",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/composter/fill4",
+        "volume": 0.3,
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.composter.fill_success": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/composter/fill_success1"
+      },
+      {
+        "name": "block/composter/fill_success2"
+      },
+      {
+        "name": "block/composter/fill_success3"
+      },
+      {
+        "name": "block/composter/fill_success4"
+      }
+    ]
+  },
+  "block.composter.ready": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/composter/ready1"
+      },
+      {
+        "name": "block/composter/ready2"
+      },
+      {
+        "name": "block/composter/ready3"
+      },
+      {
+        "name": "block/composter/ready4"
+      }
+    ]
+  },
+  "block.coral_block.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dig/coral1"
+      },
+      {
+        "name": "dig/coral2"
+      },
+      {
+        "name": "dig/coral3"
+      },
+      {
+        "name": "dig/coral4"
+      }
+    ]
+  },
+  "block.coral_block.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "step/coral1"
+      },
+      {
+        "name": "step/coral2"
+      },
+      {
+        "name": "step/coral3"
+      },
+      {
+        "name": "step/coral4"
+      },
+      {
+        "name": "step/coral5"
+      },
+      {
+        "name": "step/coral6"
+      }
+    ]
+  },
+  "block.deepslate.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/deepslate/break1"
+      },
+      {
+        "name": "block/deepslate/break2"
+      },
+      {
+        "name": "block/deepslate/break3"
+      },
+      {
+        "name": "block/deepslate/break4"
+      }
+    ]
+  },
+  "block.deepslate.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/deepslate/place1"
+      },
+      {
+        "name": "block/deepslate/place2"
+      },
+      {
+        "name": "block/deepslate/place3"
+      },
+      {
+        "name": "block/deepslate/place4"
+      },
+      {
+        "name": "block/deepslate/place5"
+      },
+      {
+        "name": "block/deepslate/place6"
+      }
+    ]
+  },
+  "block.deepslate.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/deepslate/step1"
+      },
+      {
+        "name": "block/deepslate/step2"
+      },
+      {
+        "name": "block/deepslate/step3"
+      },
+      {
+        "name": "block/deepslate/step4"
+      },
+      {
+        "name": "block/deepslate/step5"
+      },
+      {
+        "name": "block/deepslate/step6"
+      }
+    ]
+  },
+  "block.deepslate_bricks.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/deepslate_bricks/place1",
+        "volume": 0.85
+      },
+      {
+        "name": "block/deepslate_bricks/place2",
+        "volume": 0.85
+      },
+      {
+        "name": "block/deepslate_bricks/place3",
+        "volume": 0.85
+      },
+      {
+        "name": "block/deepslate_bricks/place4",
+        "volume": 0.85
+      },
+      {
+        "name": "block/deepslate_bricks/place5",
+        "volume": 0.85
+      },
+      {
+        "name": "block/deepslate_bricks/place6",
+        "volume": 0.85
+      }
+    ]
+  },
+  "block.deepslate_bricks.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/deepslate_bricks/step1",
+        "pitch": 0.9
+      },
+      {
+        "name": "block/deepslate_bricks/step2",
+        "pitch": 0.9
+      },
+      {
+        "name": "block/deepslate_bricks/step3",
+        "pitch": 0.9
+      },
+      {
+        "name": "block/deepslate_bricks/step4",
+        "pitch": 0.9
+      },
+      {
+        "name": "block/deepslate_bricks/step5",
+        "pitch": 0.9
+      }
+    ]
+  },
+  "block.deepslate_tiles.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/deepslate_bricks/place1",
+        "volume": 0.92,
+        "pitch": 1.3
+      },
+      {
+        "name": "block/deepslate_bricks/place2",
+        "volume": 0.92,
+        "pitch": 1.3
+      },
+      {
+        "name": "block/deepslate_bricks/place3",
+        "volume": 0.92,
+        "pitch": 1.3
+      },
+      {
+        "name": "block/deepslate_bricks/place4",
+        "volume": 0.92,
+        "pitch": 1.3
+      },
+      {
+        "name": "block/deepslate_bricks/place5",
+        "volume": 0.92,
+        "pitch": 1.3
+      },
+      {
+        "name": "block/deepslate_bricks/place6",
+        "volume": 0.92,
+        "pitch": 1.3
+      }
+    ]
+  },
+  "block.deepslate_tiles.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/deepslate_bricks/step1",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/deepslate_bricks/step2",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/deepslate_bricks/step3",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/deepslate_bricks/step4",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/deepslate_bricks/step5",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.honey_block.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/honeyblock/break1"
+      },
+      {
+        "name": "block/honeyblock/break2"
+      },
+      {
+        "name": "block/honeyblock/break3"
+      },
+      {
+        "name": "block/honeyblock/break4"
+      },
+      {
+        "name": "block/honeyblock/break5"
+      }
+    ]
+  },
+  "block.honey_block.slide": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/honeyblock/slide1",
+        "volume": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide1",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "block/honeyblock/slide2",
+        "volume": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide2",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide3",
+        "volume": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide3",
+        "volume": 0.8,
+        "pitch": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide4",
+        "volume": 0.8
+      },
+      {
+        "name": "block/honeyblock/slide4",
+        "volume": 0.8,
+        "pitch": 0.8
+      }
+    ]
+  },
+  "block.honey_block.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/honeyblock/step1"
+      },
+      {
+        "name": "block/honeyblock/step2"
+      },
+      {
+        "name": "block/honeyblock/step3"
+      },
+      {
+        "name": "block/honeyblock/step4"
+      },
+      {
+        "name": "block/honeyblock/step5"
+      }
+    ]
+  },
+  "block.lantern.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/lantern/break1"
+      },
+      {
+        "name": "block/lantern/break2"
+      },
+      {
+        "name": "block/lantern/break3"
+      },
+      {
+        "name": "block/lantern/break4"
+      },
+      {
+        "name": "block/lantern/break5"
+      },
+      {
+        "name": "block/lantern/break6"
+      }
+    ]
+  },
+  "block.lantern.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/lantern/place1",
+        "pitch": 1.1
+      },
+      {
+        "name": "block/lantern/place2",
+        "pitch": 1.1
+      },
+      {
+        "name": "block/lantern/place3",
+        "pitch": 1.1
+      },
+      {
+        "name": "block/lantern/place4",
+        "pitch": 1.1
+      },
+      {
+        "name": "block/lantern/place5",
+        "pitch": 1.1
+      },
+      {
+        "name": "block/lantern/place6",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "block.lantern.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/lantern/break1"
+      },
+      {
+        "name": "block/lantern/break2"
+      },
+      {
+        "name": "block/lantern/break3"
+      },
+      {
+        "name": "block/lantern/break4"
+      },
+      {
+        "name": "block/lantern/break5"
+      },
+      {
+        "name": "block/lantern/break6"
+      }
+    ]
+  },
+  "block.large_amethyst_bud.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/break1",
+        "volume": 0.7,
+        "pitch": 0.85
+      },
+      {
+        "name": "block/amethyst_cluster/break2",
+        "volume": 0.7,
+        "pitch": 0.85
+      },
+      {
+        "name": "block/amethyst_cluster/break3",
+        "volume": 0.7,
+        "pitch": 0.85
+      },
+      {
+        "name": "block/amethyst_cluster/break4",
+        "volume": 0.7,
+        "pitch": 0.85
+      }
+    ]
+  },
+  "block.large_amethyst_bud.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/place1",
+        "volume": 0.75
+      },
+      {
+        "name": "block/amethyst_cluster/place2",
+        "volume": 0.75
+      },
+      {
+        "name": "block/amethyst_cluster/place3",
+        "volume": 0.75
+      },
+      {
+        "name": "block/amethyst_cluster/place4",
+        "volume": 0.75
+      }
+    ]
+  },
+  "block.medium_amethyst_bud.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/break1",
+        "volume": 0.55,
+        "pitch": 0.95
+      },
+      {
+        "name": "block/amethyst_cluster/break2",
+        "volume": 0.55,
+        "pitch": 0.95
+      },
+      {
+        "name": "block/amethyst_cluster/break3",
+        "volume": 0.55,
+        "pitch": 0.95
+      },
+      {
+        "name": "block/amethyst_cluster/break4",
+        "volume": 0.55,
+        "pitch": 0.95
+      }
+    ]
+  },
+  "block.medium_amethyst_bud.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/place1",
+        "volume": 0.5,
+        "pitch": 1.1
+      },
+      {
+        "name": "block/amethyst_cluster/place2",
+        "volume": 0.5,
+        "pitch": 1.1
+      },
+      {
+        "name": "block/amethyst_cluster/place3",
+        "volume": 0.5,
+        "pitch": 1.1
+      },
+      {
+        "name": "block/amethyst_cluster/place4",
+        "volume": 0.5,
+        "pitch": 1.1
+      }
+    ]
+  },
+  "block.pink_petals.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/cherry_leaves/break1",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/break2",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/break3",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/break4",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/break5",
+        "volume": 0.8,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.pink_petals.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/cherry_leaves/step1",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/step2",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/step3",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/step4",
+        "volume": 0.8,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/cherry_leaves/step5",
+        "volume": 0.8,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.polished_tuff.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/tuff/break1",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/break2",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/break3",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/break4",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/break5",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.polished_tuff.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/tuff/step1",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/step2",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/step3",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/step4",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/step5",
+        "pitch": 1.2
+      },
+      {
+        "name": "block/tuff/step6",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.small_amethyst_bud.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/break1",
+        "volume": 0.4
+      },
+      {
+        "name": "block/amethyst_cluster/break2",
+        "volume": 0.4
+      },
+      {
+        "name": "block/amethyst_cluster/break3",
+        "volume": 0.4
+      },
+      {
+        "name": "block/amethyst_cluster/break4",
+        "volume": 0.4
+      }
+    ]
+  },
+  "block.small_amethyst_bud.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/amethyst_cluster/place1",
+        "volume": 0.4,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/amethyst_cluster/place2",
+        "volume": 0.4,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/amethyst_cluster/place3",
+        "volume": 0.4,
+        "pitch": 1.2
+      },
+      {
+        "name": "block/amethyst_cluster/place4",
+        "volume": 0.4,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "block.smoker.smoke": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/smoker/smoker1"
+      },
+      {
+        "name": "block/smoker/smoker2"
+      },
+      {
+        "name": "block/smoker/smoker3"
+      },
+      {
+        "name": "block/smoker/smoker4"
+      },
+      {
+        "name": "block/smoker/smoker5"
+      }
+    ]
+  },
+  "block.sweet_berry_bush.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/sweet_berry_bush/break1",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/break2",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/break3",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/break4",
+        "volume": 0.8
+      }
+    ]
+  },
+  "block.sweet_berry_bush.pick_berries": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "item/sweet_berries/pick_from_bush1"
+      },
+      {
+        "name": "item/sweet_berries/pick_from_bush2"
+      }
+    ]
+  },
+  "block.sweet_berry_bush.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/sweet_berry_bush/place1",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/place2",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/place3",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/place4",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/place5",
+        "volume": 0.8
+      },
+      {
+        "name": "block/sweet_berry_bush/place6",
+        "volume": 0.8
+      }
+    ]
+  },
+  "block.tuff.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/tuff/break1"
+      },
+      {
+        "name": "block/tuff/break2"
+      },
+      {
+        "name": "block/tuff/break3"
+      },
+      {
+        "name": "block/tuff/break4"
+      }
+    ]
+  },
+  "block.tuff.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/tuff/step1"
+      },
+      {
+        "name": "block/tuff/step2"
+      },
+      {
+        "name": "block/tuff/step3"
+      },
+      {
+        "name": "block/tuff/step4"
+      },
+      {
+        "name": "block/tuff/step5"
+      },
+      {
+        "name": "block/tuff/step6"
+      }
+    ]
+  },
+  "block.tuff_bricks.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "block/tuff_bricks/place1"
+      },
+      {
+        "name": "block/tuff_bricks/place2"
+      },
+      {
+        "name": "block/tuff_bricks/place3"
+      },
+      {
+        "name": "block/tuff_bricks/place4"
+      },
+      {
+        "name": "block/tuff_bricks/place5"
+      }
+    ]
+  },
+  "block.tuff_bricks.step": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "block/tuff_bricks/step1"
+      },
+      {
+        "name": "block/tuff_bricks/step2"
+      },
+      {
+        "name": "block/tuff_bricks/step3"
+      },
+      {
+        "name": "block/tuff_bricks/step4"
+      },
+      {
+        "name": "block/tuff_bricks/step5"
+      },
+      {
+        "name": "block/tuff_bricks/step6"
+      }
+    ]
+  },
+  "entity.bee.death": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/death1"
+      },
+      {
+        "name": "mob/bee/death2"
+      }
+    ]
+  },
+  "entity.bee.hurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/hurt1"
+      },
+      {
+        "name": "mob/bee/hurt1",
+        "pitch": 1.2
+      },
+      {
+        "name": "mob/bee/hurt2"
+      },
+      {
+        "name": "mob/bee/hurt2",
+        "pitch": 1.2
+      },
+      {
+        "name": "mob/bee/hurt3"
+      },
+      {
+        "name": "mob/bee/hurt3",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "entity.bee.loop": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/loop1",
+        "volume": 0.6
+      },
+      {
+        "name": "mob/bee/loop2",
+        "volume": 0.6
+      },
+      {
+        "name": "mob/bee/loop3",
+        "volume": 0.65
+      },
+      {
+        "name": "mob/bee/loop4",
+        "volume": 0.65
+      },
+      {
+        "name": "mob/bee/loop5",
+        "volume": 0.7
+      },
+      {
+        "name": "mob/bee/loop5",
+        "volume": 0.75
+      }
+    ]
+  },
+  "entity.bee.loop_aggressive": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/aggressive1",
+        "volume": 0.8
+      },
+      {
+        "name": "mob/bee/aggressive2",
+        "volume": 0.8
+      },
+      {
+        "name": "mob/bee/aggressive3",
+        "volume": 0.8
+      }
+    ]
+  },
+  "entity.bee.pollinate": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/pollinate1",
+        "volume": 0.8
+      },
+      {
+        "name": "mob/bee/pollinate2",
+        "volume": 0.8
+      },
+      {
+        "name": "mob/bee/pollinate3",
+        "volume": 0.8
+      },
+      {
+        "name": "mob/bee/pollinate4",
+        "volume": 0.8
+      }
+    ]
+  },
+  "entity.bee.sting": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "mob/bee/sting"
+      },
+      {
+        "name": "mob/bee/sting",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "item.bottle.fill": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "item/bottle/fill1"
+      },
+      {
+        "name": "item/bottle/fill2"
+      },
+      {
+        "name": "item/bottle/fill3"
+      },
+      {
+        "name": "item/bottle/fill4"
+      }
+    ]
+  },
+  "item.chorus_fruit.teleport": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "mob/endermen/portal"
+      },
+      {
+        "name": "mob/endermen/portal2"
+      }
+    ]
+  },
+  "item.honey_bottle.drink": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "item/bottle/drink_honey1"
+      },
+      {
+        "name": "item/bottle/drink_honey2"
+      },
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.35
+      },
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.75
+      }
+    ]
+  },
+  "item.shovel.flatten": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "item/shovel/flatten1"
+      },
+      {
+        "name": "item/shovel/flatten2"
+      },
+      {
+        "name": "item/shovel/flatten3"
+      },
+      {
+        "name": "item/shovel/flatten4"
+      }
+    ]
+  }
+}

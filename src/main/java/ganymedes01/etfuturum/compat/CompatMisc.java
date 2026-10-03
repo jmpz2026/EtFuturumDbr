@@ -130,7 +130,7 @@ public class CompatMisc {
 		}
 
 
-		if (ConfigSounds.newBlockSounds) {
+		if (ConfigSounds.newBlockSounds && ConfigSounds.newBlockSoundsVanilla) {
 			//Because NP+ uses its own (worse) step sounds for this and it causes the check in EtFuturum.java that replaces these block sounds to fail.
 			if (ModsList.NETHERITEPLUS.isLoaded()) {
 				Blocks.nether_brick.setStepSound(ModSounds.soundNetherBricks);
