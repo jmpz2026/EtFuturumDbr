@@ -90,7 +90,6 @@ import ganymedes01.etfuturum.world.nether.biome.utils.NetherBiomeManager;
 import ganymedes01.etfuturum.world.nether.dimension.DimensionProviderEFRNether;
 import ganymedes01.etfuturum.world.structure.OceanMonument;
 import makamys.mclib.core.MCLib;
-import makamys.mclib.core.MCLibModules;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Block.SoundType;
@@ -295,9 +294,8 @@ public class EtFuturum {
 		networkWrapper.registerMessage(StartElytraFlyingHandler.class, StartElytraFlyingMessage.class, 6, Side.SERVER);
 		networkWrapper.registerMessage(AttackYawHandler.class, AttackYawMessage.class, 7, Side.CLIENT);
 
-		if (!Reference.SNAPSHOT_BUILD && !Reference.DEV_ENVIRONMENT) {
-			MCLibModules.updateCheckAPI.submitModTask(MOD_ID, Reference.VERSION_NUMBER, Reference.VERSION_URL);
-		}
+		// EtFuturumDbr: no update check. The fork has its own versioning (1.0.0, ...), so comparing it
+		// against the upstream update.json would always tell players an upstream release is available.
 
 		CompatMisc.runModHooksPreInit();
 
