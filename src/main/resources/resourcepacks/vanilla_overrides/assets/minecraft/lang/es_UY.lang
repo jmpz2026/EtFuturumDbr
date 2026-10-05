@@ -1,0 +1,83 @@
+# reemplazos de vanilla
+tile.clayHardenedStained.black.name=Terracota negra
+tile.clayHardenedStained.red.name=Terracota roja
+tile.clayHardenedStained.green.name=Terracota verde
+tile.clayHardenedStained.brown.name=Terracota marrón
+tile.clayHardenedStained.blue.name=Terracota azul
+tile.clayHardenedStained.purple.name=Terracota morada
+tile.clayHardenedStained.cyan.name=Terracota cian
+tile.clayHardenedStained.silver.name=Terracota gris claro
+tile.clayHardenedStained.gray.name=Terracota gris
+tile.clayHardenedStained.pink.name=Terracota rosa
+tile.clayHardenedStained.lime.name=Terracota verde lima
+tile.clayHardenedStained.yellow.name=Terracota amarilla
+tile.clayHardenedStained.lightBlue.name=Terracota azul claro
+tile.clayHardenedStained.magenta.name=Terracota magenta
+tile.clayHardenedStained.orange.name=Terracota naranja
+tile.clayHardenedStained.white.name=Terracota blanca
+tile.clayHardened.name=Terracota
+
+tile.monsterStoneEgg.stone.name=Piedra infestada
+tile.monsterStoneEgg.cobble.name=Roca infestada
+tile.monsterStoneEgg.brick.name=Ladrillos de piedra infestados
+tile.monsterStoneEgg.mossybrick.name=Ladrillos de piedra musgosos infestados
+tile.monsterStoneEgg.crackedbrick.name=Ladrillos de piedra agrietados infestados
+tile.monsterStoneEgg.chiseledbrick.name=Ladrillos de piedra cincelados infestados
+
+tile.log.name=Tronco
+tile.log.oak.name=Tronco de roble
+tile.log.spruce.name=Tronco de abeto
+tile.log.birch.name=Tronco de abedul
+tile.log.jungle.name=Tronco de jungla
+tile.log.acacia.name=Tronco de acacia
+tile.log.big_oak.name=Tronco de roble oscuro
+tile.wood.oak.name=Tablones de roble
+tile.wood.spruce.name=Tablones de abeto
+tile.wood.birch.name=Tablones de abedul
+tile.wood.jungle.name=Tablones de jungla
+tile.wood.acacia.name=Tablones de acacia
+tile.wood.big_oak.name=Tablones de roble oscuro
+tile.woodSlab.oak.name=Losa de roble
+tile.woodSlab.spruce.name=Losa de abeto
+tile.woodSlab.birch.name=Losa de abedul
+tile.woodSlab.jungle.name=Losa de jungla
+tile.woodSlab.acacia.name=Losa de acacia
+tile.woodSlab.big_oak.name=Losa de roble oscuro
+tile.stairsWood.name=Escaleras de roble
+tile.stairsWoodSpruce.name=Escaleras de abeto
+tile.stairsWoodBirch.name=Escaleras de abedul
+tile.stairsWoodJungle.name=Escaleras de jungla
+tile.stairsWoodAcacia.name=Escaleras de acacia
+tile.stairsWoodDarkOak.name=Escaleras de roble oscuro
+tile.stoneSlab.stone.name=Losa de piedra lisa
+tile.stoneSlab.wood.name=Losa de roble petrificado
+
+tile.doublePlant.grass.name=Hierba alta
+tile.quartzBlock.lines.name=Pilar de cuarzo
+tile.mobSpawner.name=Generador
+tile.stoneMoss.name=Roca musgosa
+tile.sandStone.smooth.name=Arenisca cortada
+tile.netherBrick.name=Ladrillos del Nether
+tile.daylightDetector.name=Sensor de luz solar
+
+item.redstone.name=Polvo de redstone
+item.melon.name=Rodaja de sandía
+item.fish.cod.raw.name=Bacalao crudo
+item.fish.cod.cooked.name=Bacalao cocinado
+item.seeds.name=Semillas de trigo
+
+#Estas claves solo se activan si su objeto está activado, p. ej. Cama roja solo si las camas de colores están activadas, y Bote de roble solo si los botes nuevos están activados y replaceOldBoats no es true
+
+#Estas dos tienen que existir como clave nueva de EFR, porque en 1.7.10 las placas de presión y botones de piedra y madera comparten la misma clave.
+tile.etfuturum.oak_pressure_plate.name=Placa de presión de roble
+tile.etfuturum.oak_button.name=Botón de roble
+
+item.bed.name=Cama roja
+tile.bed.name=Cama roja
+item.sign.name=Cartel de roble
+tile.sign.name=Cartel de roble
+item.doorWood.name=Puerta de roble
+tile.doorWood.name=Puerta de roble
+tile.fence.name=Valla de roble
+tile.fenceGate.name=Puerta de valla de roble
+tile.trapdoor.name=Trampilla de roble
