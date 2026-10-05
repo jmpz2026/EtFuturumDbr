@@ -432,7 +432,9 @@ public class ModRecipes {
 			GameRegistry.addSmelting(new ItemStack(Blocks.stonebrick), new ItemStack(Blocks.stonebrick, 1, 2), 0.0F);
 		}
 
-		if (!ModsList.GTNH.isLoaded()) {
+		// Without the guard, a disabled moss block registers recipes holding an ItemStack with a null item,
+		// and Crucible's Bukkit RecipeIterator throws NPE on them (breaks RPGItems loading items.yml).
+		if (!ModsList.GTNH.isLoaded() && ModBlocks.MOSS_BLOCK.isEnabled()) {
 			GameRegistry.addShapelessRecipe(new ItemStack(Blocks.mossy_cobblestone), new ItemStack(Blocks.cobblestone), ModBlocks.MOSS_BLOCK.newItemStack());
 			GameRegistry.addShapelessRecipe(new ItemStack(Blocks.stonebrick, 1, 1), new ItemStack(Blocks.stonebrick), ModBlocks.MOSS_BLOCK.newItemStack());
 		}
