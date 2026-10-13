@@ -2,8 +2,8 @@ package ganymedes01.etfuturum.client.skins;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.IImageBuffer;
+import net.minecraft.client.renderer.ThreadDownloadImageData;
 import net.minecraft.client.renderer.texture.DynamicTexture;
-import net.minecraft.client.renderer.texture.SimpleTexture;
 import net.minecraft.client.renderer.texture.TextureUtil;
 import net.minecraft.client.resources.IResourceManager;
 import net.minecraft.util.ResourceLocation;
@@ -21,8 +21,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Copied from vanilla and adapted to fit my needs
+ *
+ * <p>Extends {@link ThreadDownloadImageData} only for its type: every method is overridden.
+ * Resource reloads flush any {@code SimpleTexture} whose location is not a file in a
+ * resource pack (MCPatcher, bundled with Angelica) and spare downloaded skins by checking
+ * for this class. Extending {@code SimpleTexture} got the skin dropped on every language or
+ * resource pack change, and the player rendered with the missing texture until restart.
  */
-public class NewThreadDownloadImageData extends SimpleTexture {
+public class NewThreadDownloadImageData extends ThreadDownloadImageData {
 
 	static final Logger logger = LogManager.getLogger();
 	private static final AtomicInteger threadDownloadCounter = new AtomicInteger(0);
@@ -36,7 +42,7 @@ public class NewThreadDownloadImageData extends SimpleTexture {
 	private final ResourceLocation resLocationOld;
 
 	public NewThreadDownloadImageData(File file, String imageUrl, ResourceLocation texture, NewImageBufferDownload imgDownload, ResourceLocation resLocationOld, IImageBuffer imageBuffer) {
-		super(texture);
+		super(file, imageUrl, texture, imageBuffer);
 		cacheFile = file;
 		this.imageUrl = imageUrl;
 		this.imgDownload = imgDownload;
